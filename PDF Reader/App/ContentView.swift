@@ -191,7 +191,8 @@ struct WindowCloseInterceptor: NSViewRepresentable {
                     }
                 }
                 // If no URL yet, fall through to save-as
-                PDFExportService.saveAs(document: appState.pdfDocument!) { newURL in
+                guard let document = appState.pdfDocument else { return false }
+                PDFExportService.saveAs(document: document) { newURL in
                     if newURL != nil {
                         Task { @MainActor in
                             self.appState.hasUnsavedChanges = false

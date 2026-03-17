@@ -192,11 +192,9 @@ class AnnotatablePDFView: PDFView {
                        annotation.bounds.insetBy(dx: -6, dy: -6).contains(pointOnPage)
             }
             if let widget = hitWidget {
-                // Swift.print("[DIAG] mouseDown: HIT Widget text field")
                 MainActor.assumeIsolated {
                     appState.selectedAnnotation = widget
                     let rect = annotationWindowRect(for: widget, on: page)
-                    // Swift.print("[DIAG] mouseDown: Widget rect=\(rect?.debugDescription ?? "nil")")
                     appState.selectedAnnotationRect = rect
                 }
                 // Apply persisted font style to the widget
@@ -221,15 +219,12 @@ class AnnotatablePDFView: PDFView {
                        annotation.bounds.insetBy(dx: -6, dy: -6).contains(pointOnPage)
             }
             if let freeText = hitFreeText {
-                // Swift.print("[DIAG] mouseDown: HIT FreeText annotation, bounds=\(freeText.bounds)")
                 MainActor.assumeIsolated {
                     appState.selectedAnnotation = freeText
                     appState.syncFormatFromAnnotation(freeText)
                     let rect = annotationWindowRect(for: freeText, on: page)
-                    // Swift.print("[DIAG] mouseDown: FreeText rect=\(rect?.debugDescription ?? "nil")")
                     appState.selectedAnnotationRect = rect
                 }
-                // Swift.print("[DIAG] mouseDown: after set — selectedAnnotation=\(appState.selectedAnnotation != nil), selectedAnnotationRect=\(appState.selectedAnnotationRect?.debugDescription ?? "nil")")
                 return
             }
         }
@@ -306,7 +301,6 @@ class AnnotatablePDFView: PDFView {
                 appState.pushAnnotation(annotation, on: page)
                 appState.selectedAnnotation = annotation
                 let rect = annotationWindowRect(for: annotation, on: page)
-                // Swift.print("[DIAG] mouseDown: CREATED text annotation, rect=\(rect?.debugDescription ?? "nil")")
                 appState.selectedAnnotationRect = rect
                 appState.activeTool = .select
                 // Start editing overlay directly
@@ -715,6 +709,10 @@ struct PDFKitViewWrapper: NSViewRepresentable {
             self.appState = appState
         }
 
+        deinit {
+            NotificationCenter.default.removeObserver(self)
+        }
+
         @objc func pageChanged(_ notification: Notification) {
             guard let pdfView = pdfView,
                   let currentPage = pdfView.currentPage,
@@ -799,7 +797,7 @@ struct PDFKitViewWrapper: NSViewRepresentable {
         @objc func handlePrint(_ notification: Notification) {
             guard let pdfView = pdfView,
                   let document = pdfView.document else { return }
-            let printInfo = NSPrintInfo.shared.copy() as! NSPrintInfo
+            guard let printInfo = NSPrintInfo.shared.copy() as? NSPrintInfo else { return }
             printInfo.isHorizontallyCentered = true
             printInfo.isVerticallyCentered = true
             printInfo.scalingFactor = 1.0

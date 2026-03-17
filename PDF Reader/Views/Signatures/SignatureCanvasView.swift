@@ -84,11 +84,13 @@ class SignatureDrawingView: NSView {
         let allPoints = strokes.flatMap { $0 }
         guard !allPoints.isEmpty else { return nil }
 
-        let minX = allPoints.map(\.x).min()! - 4
-        let minY = allPoints.map(\.y).min()! - 4
-        let maxX = allPoints.map(\.x).max()! + 4
-        let maxY = allPoints.map(\.y).max()! + 4
-        let cropRect = CGRect(x: minX, y: minY, width: maxX - minX, height: maxY - minY)
+        guard let rawMinX = allPoints.map(\.x).min(),
+              let rawMinY = allPoints.map(\.y).min(),
+              let rawMaxX = allPoints.map(\.x).max(),
+              let rawMaxY = allPoints.map(\.y).max() else { return nil }
+        let cropRect = CGRect(x: rawMinX - 4, y: rawMinY - 4,
+                              width: (rawMaxX + 4) - (rawMinX - 4),
+                              height: (rawMaxY + 4) - (rawMinY - 4))
 
         let image = NSImage(size: cropRect.size)
         image.lockFocus()
