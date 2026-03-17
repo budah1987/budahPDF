@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B2C3D4E5F60001000A0001 /* PDFReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0001 /* PDFReaderApp.swift */; };
+		A1B2C3D4E5F60001000A0002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0002 /* ContentView.swift */; };
+		A1B2C3D4E5F60001000A0003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0003 /* AppState.swift */; };
+		A1B2C3D4E5F60001000A0004 /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0004 /* MainToolbar.swift */; };
+		A1B2C3D4E5F60001000A0005 /* ThumbnailSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0005 /* ThumbnailSidebar.swift */; };
+		A1B2C3D4E5F60001000A0006 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0006 /* PDFKitView.swift */; };
+		A1B2C3D4E5F60001000A0007 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002000A0007 /* AppTheme.swift */; };
+		B3D4E5F6A7B80001000C0001 /* EditSubToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4E5F6A7B80001000B0001 /* EditSubToolbar.swift */; };
+		B3D4E5F6A7B80002000C0001 /* PDFAnnotationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4E5F6A7B80002000B0001 /* PDFAnnotationService.swift */; };
+		B3D4E5F6A7B80003000C0001 /* FormFieldDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4E5F6A7B80003000B0001 /* FormFieldDetector.swift */; };
+		C4D5E6F7A8B90001000E0001 /* SignatureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90001000D0001 /* SignatureStore.swift */; };
+		C4D5E6F7A8B90002000E0001 /* DateStampConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90002000D0001 /* DateStampConfig.swift */; };
+		C4D5E6F7A8B90003000E0001 /* SignatureCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90003000D0001 /* SignatureCanvasView.swift */; };
+		C4D5E6F7A8B90004000E0001 /* SignaturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90004000D0001 /* SignaturePicker.swift */; };
+		C4D5E6F7A8B90005000E0001 /* DatePickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90005000D0001 /* DatePickerPopover.swift */; };
+		C4D5E6F7A8B90006000E0001 /* PDFAnnotation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90006000D0001 /* PDFAnnotation+Extensions.swift */; };
+		D5E6F7A8B9CA0002000F0001 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6F7A8B9CA0001000F0001 /* PDFExportService.swift */; };
+		E6F7A8B9CADB0001001A0001 /* RecentFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7A8B9CADB0002001A0001 /* RecentFilesManager.swift */; };
+		E6F7A8B9CADB0003001A0001 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F7A8B9CADB0004001A0001 /* WelcomeView.swift */; };
+		F7A8B9CADB010001001B0001 /* TextFormatBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8B9CADB010002001B0001 /* TextFormatBar.swift */; };
+		F7A8B9CADB020001001C0001 /* HighlightColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8B9CADB020002001C0001 /* HighlightColorPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D4E5F60002000A0001 /* PDFReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderApp.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0003 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0004 /* MainToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolbar.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0005 /* ThumbnailSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailSidebar.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0006 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002000A0007 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60003000A0001 /* budahPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "budahPDF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D4E5F6A7B80001000B0001 /* EditSubToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubToolbar.swift; sourceTree = "<group>"; };
+		B3D4E5F6A7B80002000B0001 /* PDFAnnotationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAnnotationService.swift; sourceTree = "<group>"; };
+		B3D4E5F6A7B80003000B0001 /* FormFieldDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldDetector.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90001000D0001 /* SignatureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureStore.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90002000D0001 /* DateStampConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStampConfig.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90003000D0001 /* SignatureCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureCanvasView.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90004000D0001 /* SignaturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePicker.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90005000D0001 /* DatePickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPopover.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90006000D0001 /* PDFAnnotation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFAnnotation+Extensions.swift"; sourceTree = "<group>"; };
+		D5E6F7A8B9CA0001000F0001 /* PDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportService.swift; sourceTree = "<group>"; };
+		E6F7A8B9CADB0002001A0001 /* RecentFilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentFilesManager.swift; sourceTree = "<group>"; };
+		E6F7A8B9CADB0004001A0001 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F7A8B9CADB010002001B0001 /* TextFormatBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatBar.swift; sourceTree = "<group>"; };
+		F7A8B9CADB020002001C0001 /* HighlightColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightColorPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3D4E5F60004000A0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C3D4E5F60005000A0001 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60005000A0002 /* PDF Reader */,
+				A1B2C3D4E5F60005000A0009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0002 /* PDF Reader */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60005000A0003 /* App */,
+				A1B2C3D4E5F60005000A0004 /* Models */,
+				A1B2C3D4E5F60005000A0005 /* Views */,
+				B3D4E5F6A7B80004000B0001 /* Services */,
+				A1B2C3D4E5F60005000A000A /* Theme */,
+				C4D5E6F7A8B90009000D0001 /* Extensions */,
+			);
+			path = "PDF Reader";
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0001 /* PDFReaderApp.swift */,
+				A1B2C3D4E5F60002000A0002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0003 /* AppState.swift */,
+				C4D5E6F7A8B90001000D0001 /* SignatureStore.swift */,
+				C4D5E6F7A8B90002000D0001 /* DateStampConfig.swift */,
+				E6F7A8B9CADB0002001A0001 /* RecentFilesManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60005000A0006 /* Toolbar */,
+				A1B2C3D4E5F60005000A0007 /* Sidebar */,
+				A1B2C3D4E5F60005000A0008 /* Canvas */,
+				C4D5E6F7A8B90007000D0001 /* Signatures */,
+				C4D5E6F7A8B90008000D0001 /* DateStamp */,
+				E6F7A8B9CADB0004001A0001 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0006 /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0004 /* MainToolbar.swift */,
+				B3D4E5F6A7B80001000B0001 /* EditSubToolbar.swift */,
+				F7A8B9CADB010002001B0001 /* TextFormatBar.swift */,
+				F7A8B9CADB020002001C0001 /* HighlightColorPicker.swift */,
+			);
+			path = Toolbar;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0007 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0005 /* ThumbnailSidebar.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0008 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0006 /* PDFKitView.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A0009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60003000A0001 /* budahPDF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60005000A000A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60002000A0007 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B3D4E5F6A7B80004000B0001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4E5F6A7B80002000B0001 /* PDFAnnotationService.swift */,
+				B3D4E5F6A7B80003000B0001 /* FormFieldDetector.swift */,
+				D5E6F7A8B9CA0001000F0001 /* PDFExportService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4D5E6F7A8B90007000D0001 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5E6F7A8B90003000D0001 /* SignatureCanvasView.swift */,
+				C4D5E6F7A8B90004000D0001 /* SignaturePicker.swift */,
+			);
+			path = Signatures;
+			sourceTree = "<group>";
+		};
+		C4D5E6F7A8B90008000D0001 /* DateStamp */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5E6F7A8B90005000D0001 /* DatePickerPopover.swift */,
+			);
+			path = DateStamp;
+			sourceTree = "<group>";
+		};
+		C4D5E6F7A8B90009000D0001 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5E6F7A8B90006000D0001 /* PDFAnnotation+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D4E5F60006000A0001 /* PDF Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "PDF Reader" */;
+			buildPhases = (
+				A1B2C3D4E5F60007000A0001 /* Sources */,
+				A1B2C3D4E5F60004000A0001 /* Frameworks */,
+				A1B2C3D4E5F60007000A0002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "budahPDF";
+			productName = "budahPDF";
+			productReference = A1B2C3D4E5F60003000A0001 /* budahPDF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C3D4E5F60009000A0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A1B2C3D4E5F60006000A0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D4E5F60008000A0001 /* Build configuration list for PBXProject "PDF Reader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D4E5F60005000A0001;
+			productRefGroup = A1B2C3D4E5F60005000A0009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D4E5F60006000A0001 /* PDF Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D4E5F60007000A0002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3D4E5F60007000A0001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60001000A0001 /* PDFReaderApp.swift in Sources */,
+				A1B2C3D4E5F60001000A0002 /* ContentView.swift in Sources */,
+				A1B2C3D4E5F60001000A0003 /* AppState.swift in Sources */,
+				A1B2C3D4E5F60001000A0004 /* MainToolbar.swift in Sources */,
+				A1B2C3D4E5F60001000A0005 /* ThumbnailSidebar.swift in Sources */,
+				A1B2C3D4E5F60001000A0006 /* PDFKitView.swift in Sources */,
+				A1B2C3D4E5F60001000A0007 /* AppTheme.swift in Sources */,
+				B3D4E5F6A7B80001000C0001 /* EditSubToolbar.swift in Sources */,
+				B3D4E5F6A7B80002000C0001 /* PDFAnnotationService.swift in Sources */,
+				B3D4E5F6A7B80003000C0001 /* FormFieldDetector.swift in Sources */,
+				C4D5E6F7A8B90001000E0001 /* SignatureStore.swift in Sources */,
+				C4D5E6F7A8B90002000E0001 /* DateStampConfig.swift in Sources */,
+				C4D5E6F7A8B90003000E0001 /* SignatureCanvasView.swift in Sources */,
+				C4D5E6F7A8B90004000E0001 /* SignaturePicker.swift in Sources */,
+				C4D5E6F7A8B90005000E0001 /* DatePickerPopover.swift in Sources */,
+				C4D5E6F7A8B90006000E0001 /* PDFAnnotation+Extensions.swift in Sources */,
+				D5E6F7A8B9CA0002000F0001 /* PDFExportService.swift in Sources */,
+				E6F7A8B9CADB0001001A0001 /* RecentFilesManager.swift in Sources */,
+				E6F7A8B9CADB0003001A0001 /* WelcomeView.swift in Sources */,
+				F7A8B9CADB010001001B0001 /* TextFormatBar.swift in Sources */,
+				F7A8B9CADB020001001C0001 /* HighlightColorPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3D4E5F60008000A0011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F60008000A0012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F60008000A0021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "budahPDF";
+				INFOPLIST_KEY_CFBundleDocumentTypes = "({CFBundleTypeName = \"PDF Document\"; CFBundleTypeRole = Viewer; LSHandlerRank = Default; LSItemContentTypes = (\"com.adobe.pdf\"); })";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSRequiresAquaSystemAppearance = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amir.pdfreader;
+				PRODUCT_NAME = "budahPDF";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F60008000A0022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "budahPDF";
+				INFOPLIST_KEY_CFBundleDocumentTypes = "({CFBundleTypeName = \"PDF Document\"; CFBundleTypeRole = Viewer; LSHandlerRank = Default; LSItemContentTypes = (\"com.adobe.pdf\"); })";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSRequiresAquaSystemAppearance = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amir.pdfreader;
+				PRODUCT_NAME = "budahPDF";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3D4E5F60008000A0001 /* Build configuration list for PBXProject "PDF Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F60008000A0011 /* Debug */,
+				A1B2C3D4E5F60008000A0012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "PDF Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F60008000A0021 /* Debug */,
+				A1B2C3D4E5F60008000A0022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B2C3D4E5F60009000A0001 /* Project object */;
+}
