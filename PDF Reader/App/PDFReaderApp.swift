@@ -1,8 +1,19 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
+class AppDelegate: NSObject, NSApplicationDelegate {
+    static var appState: AppState?
+
+    func application(_ application: NSApplication, open urls: [URL]) {
+        guard let url = urls.first, let appState = Self.appState else { return }
+        _ = url.startAccessingSecurityScopedResource()
+        appState.openDocument(url: url)
+    }
+}
+
 @main
 struct PDFReaderApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var appState = AppState()
     @StateObject private var signatureStore = SignatureStore()
     @StateObject private var recentFilesManager = RecentFilesManager.shared
@@ -12,9 +23,8 @@ struct PDFReaderApp: App {
             ContentView(appState: appState, signatureStore: signatureStore)
                 .frame(minWidth: 700, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity)
                 .preferredColorScheme(.dark)
-                .onOpenURL { url in
-                    _ = url.startAccessingSecurityScopedResource()
-                    appState.openDocument(url: url)
+                .onAppear {
+                    AppDelegate.appState = appState
                 }
                 .fileImporter(
                     isPresented: $appState.showFileImporter,
