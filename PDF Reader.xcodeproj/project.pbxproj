@@ -38,7 +38,8 @@
 		A1B2C3D4E5F60002000A0005 /* ThumbnailSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailSidebar.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002000A0006 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002000A0007 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		A1B2C3D4E5F60003000A0001 /* budahPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "budahPDF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60002000A0008 /* budahPDF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = budahPDF.entitlements; sourceTree = "<group>"; };
+		A1B2C3D4E5F60003000A0001 /* budahPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budahPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D4E5F6A7B80001000B0001 /* EditSubToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubToolbar.swift; sourceTree = "<group>"; };
 		B3D4E5F6A7B80002000B0001 /* PDFAnnotationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAnnotationService.swift; sourceTree = "<group>"; };
 		B3D4E5F6A7B80003000B0001 /* FormFieldDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldDetector.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				B3D4E5F6A7B80004000B0001 /* Services */,
 				A1B2C3D4E5F60005000A000A /* Theme */,
 				C4D5E6F7A8B90009000D0001 /* Extensions */,
+				A1B2C3D4E5F60002000A0008 /* budahPDF.entitlements */,
 			);
 			path = "PDF Reader";
 			sourceTree = "<group>";
@@ -201,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1B2C3D4E5F60006000A0001 /* PDF Reader */ = {
+		A1B2C3D4E5F60006000A0001 /* budahPDF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "PDF Reader" */;
+			buildConfigurationList = A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "budahPDF" */;
 			buildPhases = (
 				A1B2C3D4E5F60007000A0001 /* Sources */,
 				A1B2C3D4E5F60004000A0001 /* Frameworks */,
@@ -213,8 +215,8 @@
 			);
 			dependencies = (
 			);
-			name = "budahPDF";
-			productName = "budahPDF";
+			name = budahPDF;
+			productName = budahPDF;
 			productReference = A1B2C3D4E5F60003000A0001 /* budahPDF.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -246,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1B2C3D4E5F60006000A0001 /* PDF Reader */,
+				A1B2C3D4E5F60006000A0001 /* budahPDF */,
 			);
 		};
 /* End PBXProject section */
@@ -416,17 +418,17 @@
 		A1B2C3D4E5F60008000A0021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = "PDF Reader/budahPDF.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9QY9MQA83X;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "budahPDF";
+				INFOPLIST_KEY_CFBundleDisplayName = budahPDF;
 				INFOPLIST_KEY_CFBundleDocumentTypes = "({CFBundleTypeName = \"PDF Document\"; CFBundleTypeRole = Viewer; LSHandlerRank = Default; LSItemContentTypes = (\"com.adobe.pdf\"); })";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -437,7 +439,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amir.pdfreader;
-				PRODUCT_NAME = "budahPDF";
+				PRODUCT_NAME = budahPDF;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -446,17 +448,17 @@
 		A1B2C3D4E5F60008000A0022 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = "PDF Reader/budahPDF.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9QY9MQA83X;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "budahPDF";
+				INFOPLIST_KEY_CFBundleDisplayName = budahPDF;
 				INFOPLIST_KEY_CFBundleDocumentTypes = "({CFBundleTypeName = \"PDF Document\"; CFBundleTypeRole = Viewer; LSHandlerRank = Default; LSItemContentTypes = (\"com.adobe.pdf\"); })";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -467,7 +469,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amir.pdfreader;
-				PRODUCT_NAME = "budahPDF";
+				PRODUCT_NAME = budahPDF;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -485,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "PDF Reader" */ = {
+		A1B2C3D4E5F60008000A0003 /* Build configuration list for PBXNativeTarget "budahPDF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1B2C3D4E5F60008000A0021 /* Debug */,
