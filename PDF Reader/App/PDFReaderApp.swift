@@ -12,6 +12,10 @@ struct PDFReaderApp: App {
             ContentView(appState: appState, signatureStore: signatureStore)
                 .frame(minWidth: 700, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity)
                 .preferredColorScheme(.dark)
+                .onOpenURL { url in
+                    _ = url.startAccessingSecurityScopedResource()
+                    appState.openDocument(url: url)
+                }
                 .fileImporter(
                     isPresented: $appState.showFileImporter,
                     allowedContentTypes: [.pdf],
